@@ -59,7 +59,7 @@ const DotCalculator = () => {
 
       {!result ? (
         <>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '14px', marginBottom: '14px' }}>
             {[
               { key: 'systolic',  label: 'Systolic BP',    placeholder: 'e.g. 135', unit: 'mmHg' },
               { key: 'diastolic', label: 'Diastolic BP',   placeholder: 'e.g. 88',  unit: 'mmHg' },
@@ -150,7 +150,7 @@ const Home = () => (
     {/* HERO */}
     <section style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%)', color: 'white', padding: '80px 0 100px' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
+        <div className="hero-grid">
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.15)', padding: '6px 14px', borderRadius: '999px', fontSize: '13px', fontWeight: '600', marginBottom: '24px' }}>
               <Truck size={14} /> Built for CDL Drivers
@@ -161,7 +161,7 @@ const Home = () => (
             <p style={{ fontSize: '20px', opacity: 0.88, marginBottom: '32px', lineHeight: '1.6' }}>
               DriveWell helps truck drivers track their health, pass DOT physicals, and stay on the road — while giving fleet managers real-time visibility to protect their business.
             </p>
-            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
+            <div className="btn-stack" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
               <Link to="/drivers" className="btn-white">Download Free App</Link>
               <Link to="/fleets" className="btn-secondary" style={{ background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.5)' }}>Fleet Demo →</Link>
             </div>

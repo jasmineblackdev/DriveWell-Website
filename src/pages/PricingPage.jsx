@@ -14,22 +14,23 @@ const DRIVER_TIERS = [
     highlight: false,
   },
   {
-    name: 'Pro',
-    price: { monthly: 9.99, annual: 6.58 },
+    name: 'Driver Pro',
+    price: { monthly: 14.99, annual: 9.99 },
+    annualTotal: 119.99,
     desc: 'For owner-operators & independent drivers',
     color: '#2563eb',
     badge: 'Most Popular',
     features: ['Everything in Free', '50+ workout routines + videos', 'Nutrition & meal tracking', 'Sleep apnea screening', 'Wearable sync', 'Telehealth booking', 'Personal trainer marketplace', 'Achievements & streaks', 'Downloadable DOT reports'],
-    cta: 'Start Pro Free Trial',
+    cta: 'Start Free 14-Day Trial',
     ctaLink: '/drivers',
     highlight: true,
   },
 ]
 
 const FLEET_TIERS = [
-  { name: 'Starter',      price: { monthly: 15, annual: 12 }, range: 'Up to 10 drivers',   color: '#6b7280', features: ['Fleet dashboard', 'DOT roster & renewal alerts', 'Driver health metrics', 'Pro app for all drivers', 'Email support'] },
-  { name: 'Growth',       price: { monthly: 12, annual: 10 }, range: '11–50 drivers',       color: '#2563eb', features: ['Everything in Starter', 'Wellness trends & analytics', 'Activity feed', 'Insurance compliance report', 'CSV & PDF exports', 'Chat support'], badge: 'Most Popular' },
-  { name: 'Professional', price: { monthly: 10, annual: 8  }, range: '51–200 drivers',      color: '#7c3aed', features: ['Everything in Growth', 'ELD integrations (Samsara, Motive)', 'API access', 'Custom alert thresholds', 'Dedicated account manager'] },
+  { name: 'Starter',      price: { monthly: 25, annual: 20 }, range: 'Up to 25 drivers',   color: '#6b7280', features: ['Fleet dashboard', 'DOT roster & renewal alerts', 'Driver wellness metrics', 'Pro app for all drivers', 'Email support'] },
+  { name: 'Growth',       price: { monthly: 20, annual: 16 }, range: '26–100 drivers',      color: '#2563eb', features: ['Everything in Starter', 'Wellness trends & analytics', 'Activity feed', 'Insurance compliance report', 'CSV & PDF exports', 'Chat support'], badge: 'Most Popular' },
+  { name: 'Professional', price: { monthly: 17, annual: 14 }, range: '101–250 drivers',     color: '#7c3aed', features: ['Everything in Growth', 'ELD integrations (Samsara, Motive)', 'API access', 'Custom alert thresholds', 'Dedicated account manager'] },
 ]
 
 const FeatureRow = ({ text }) => (
@@ -101,7 +102,7 @@ const PricingPage = () => {
                         <span style={{ color: '#9ca3af', fontSize: '14px' }}>{tier.price[billing] === 0 ? '' : '/month'}</span>
                       </div>
                       {billing === 'annual' && tier.price.annual > 0 && (
-                        <p style={{ fontSize: '12px', color: '#22c55e', fontWeight: '600' }}>$79/year billed annually</p>
+                        <p style={{ fontSize: '12px', color: '#22c55e', fontWeight: '600' }}>${tier.annualTotal || (tier.price.annual * 12).toFixed(2)}/year — save {Math.round((1 - tier.price.annual / tier.price.monthly) * 100)}%</p>
                       )}
                     </div>
                     <div style={{ borderTop: '1px solid #f3f4f6', paddingTop: '16px', marginBottom: '20px' }}>
