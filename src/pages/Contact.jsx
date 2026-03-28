@@ -32,7 +32,7 @@ const Contact = () => {
       </div>
 
       <div className="container" style={{ padding: '64px 24px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '48px', maxWidth: '1000px', margin: '0 auto' }}>
+        <div className="contact-layout">
           {/* Contact options */}
           <div>
             <h2 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '24px' }}>Other Ways to Reach Us</h2>
@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' }}>
+                  <div className="form-row-2">
                     <div>
                       <label style={lbl}>Full Name</label>
                       <input type="text" value={form.name} onChange={set('name')} placeholder="Jane Smith" required style={inp} />
@@ -118,7 +118,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' }}>
+                  <div className="form-row-2">
                     <div>
                       <label style={lbl}>Company</label>
                       <input type="text" value={form.company} onChange={set('company')} placeholder="FleetCo Logistics" required style={inp} />

@@ -57,7 +57,7 @@ const PilotForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
+      <div className="form-row-2" style={{ marginBottom: '16px' }}>
         {[
           { key: 'name',    label: 'Full Name',       placeholder: 'John Smith',           type: 'text'  },
           { key: 'company', label: 'Company Name',    placeholder: 'Smith Logistics Inc.',  type: 'text'  },
