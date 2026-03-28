@@ -7,6 +7,9 @@ import PricingPage from './pages/PricingPage'
 import ForFleets from './pages/ForFleets'
 import ForDrivers from './pages/ForDrivers'
 import ForTrainers from './pages/ForTrainers'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import Contact from './pages/Contact'
 import './index.css'
 
 function App() {
@@ -14,11 +17,14 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/"         element={<Home />}        />
-        <Route path="/pricing"  element={<PricingPage />} />
-        <Route path="/fleets"   element={<ForFleets />}   />
-        <Route path="/drivers"  element={<ForDrivers />}  />
-        <Route path="/trainers" element={<ForTrainers />} />
+        <Route path="/"         element={<Home />}          />
+        <Route path="/pricing"  element={<PricingPage />}   />
+        <Route path="/fleets"   element={<ForFleets />}     />
+        <Route path="/drivers"  element={<ForDrivers />}    />
+        <Route path="/trainers" element={<ForTrainers />}   />
+        <Route path="/privacy"  element={<PrivacyPolicy />} />
+        <Route path="/terms"    element={<TermsOfService />} />
+        <Route path="/contact"  element={<Contact />}       />
       </Routes>
       <Footer />
     </Router>

@@ -7,6 +7,7 @@ const links = [
   { to: '/fleets',   label: 'For Fleets'   },
   { to: '/trainers', label: 'For Trainers' },
   { to: '/pricing',  label: 'Pricing'      },
+  { to: '/contact',  label: 'Contact'      },
 ]
 
 const Nav = () => {

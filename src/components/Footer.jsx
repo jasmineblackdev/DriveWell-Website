@@ -38,8 +38,11 @@ const Footer = () => (
         {/* Company */}
         <div>
           <p style={{ fontWeight: '700', fontSize: '14px', marginBottom: '14px', color: '#e2e8f0' }}>Company</p>
-          {['About', 'Blog', 'Press', 'Careers', 'Contact'].map(f => (
-            <p key={f} style={{ fontSize: '14px', color: '#94a3b8', marginBottom: '8px' }}>{f}</p>
+          {[['Contact Us', '/contact'], ['Privacy Policy', '/privacy'], ['Terms of Service', '/terms']].map(([l, p]) => (
+            <Link key={p} to={p} style={{ display: 'block', fontSize: '14px', color: '#94a3b8', marginBottom: '8px' }}>{l}</Link>
+          ))}
+          {['Blog', 'Careers'].map(f => (
+            <p key={f} style={{ fontSize: '14px', color: '#64748b', marginBottom: '8px' }}>{f}</p>
           ))}
         </div>
       </div>
@@ -47,9 +50,9 @@ const Footer = () => (
       <div style={{ borderTop: '1px solid #1e293b', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <p style={{ fontSize: '13px', color: '#64748b' }}>© {new Date().getFullYear()} DriveWell. All rights reserved.</p>
         <div style={{ display: 'flex', gap: '20px' }}>
-          {['Privacy Policy', 'Terms of Service', 'HIPAA Compliance'].map(l => (
-            <a key={l} href="#" style={{ fontSize: '13px', color: '#64748b' }}>{l}</a>
-          ))}
+          <Link to="/privacy" style={{ fontSize: '13px', color: '#64748b' }}>Privacy Policy</Link>
+          <Link to="/terms"   style={{ fontSize: '13px', color: '#64748b' }}>Terms of Service</Link>
+          <Link to="/contact" style={{ fontSize: '13px', color: '#64748b' }}>Contact</Link>
         </div>
       </div>
     </div>
