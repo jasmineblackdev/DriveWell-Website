@@ -75,7 +75,7 @@ const Contact = () => {
                 <h2 style={{ fontSize: '22px', fontWeight: '700', marginBottom: '10px' }}>Message Sent!</h2>
                 <p style={{ color: '#6b7280', lineHeight: '1.6' }}>
                   Thanks, <strong>{form.name.split(' ')[0]}</strong>! We'll be in touch at <strong>{form.email}</strong> within one business day.
-                  {form.type === 'demo' && ' We'll send you a calendar link to schedule your fleet demo.'}
+                  {form.type === 'demo' && " We'll send you a calendar link to schedule your fleet demo."}
                 </p>
               </div>
             ) : (
