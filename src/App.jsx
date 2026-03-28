@@ -10,6 +10,7 @@ import ForTrainers from './pages/ForTrainers'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import Contact from './pages/Contact'
+import PilotProgram from './pages/PilotProgram'
 import './index.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/privacy"  element={<PrivacyPolicy />} />
         <Route path="/terms"    element={<TermsOfService />} />
         <Route path="/contact"  element={<Contact />}       />
+        <Route path="/pilot"    element={<PilotProgram />}  />
       </Routes>
       <Footer />
     </Router>

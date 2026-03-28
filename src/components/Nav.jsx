@@ -5,7 +5,7 @@ import { Truck, Menu, X } from 'lucide-react'
 const links = [
   { to: '/drivers',  label: 'For Drivers'  },
   { to: '/fleets',   label: 'For Fleets'   },
-  { to: '/trainers', label: 'For Trainers' },
+  { to: '/pilot',    label: 'Pilot'        },
   { to: '/pricing',  label: 'Pricing'      },
   { to: '/contact',  label: 'Contact'      },
 ]
