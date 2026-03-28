@@ -22,7 +22,7 @@ const Footer = () => (
         {/* Product */}
         <div>
           <p style={{ fontWeight: '700', fontSize: '14px', marginBottom: '14px', color: '#e2e8f0' }}>Product</p>
-          {[['For Drivers', '/drivers'], ['For Fleets', '/fleets'], ['Pilot Program', '/pilot'], ['Pricing', '/pricing']].map(([l, p]) => (
+          {[['For Drivers', '/drivers'], ['For Fleets', '/fleets'], ['For Trainers', '/trainers'], ['Pilot Program', '/pilot'], ['Pricing', '/pricing']].map(([l, p]) => (
             <Link key={p} to={p} style={{ display: 'block', fontSize: '14px', color: '#94a3b8', marginBottom: '8px' }}>{l}</Link>
           ))}
         </div>

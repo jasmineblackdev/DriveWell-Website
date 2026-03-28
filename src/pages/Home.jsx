@@ -431,6 +431,23 @@ const Home = () => (
             </Link>
           </div>
         </div>
+
+        {/* Trainer callout */}
+        <div style={{ marginTop: '24px', padding: '20px 24px', background: '#fff7ed', borderRadius: '12px', border: '1px solid #fed7aa', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#ffedd5', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <Dumbbell size={20} color="#ea580c" />
+            </div>
+            <div>
+              <p style={{ fontWeight: '700', fontSize: '15px', color: '#9a3412' }}>Are you a personal trainer?</p>
+              <p style={{ fontSize: '13px', color: '#c2410c' }}>Reach 50,000+ CDL drivers actively looking for coaching. List your services on DriveWell.</p>
+            </div>
+          </div>
+          <Link to="/trainers" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '10px 20px', background: '#ea580c', color: 'white', borderRadius: '8px', fontWeight: '600', fontSize: '14px', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+            Learn More <ArrowRight size={14} />
+          </Link>
+        </div>
+
       </div>
     </section>
 
