@@ -15,7 +15,7 @@ const ForFleets = () => (
         </p>
         <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/pricing" className="btn-primary">Start 14-Day Free Trial</Link>
-          <a href="#demo" className="btn-secondary" style={{ background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}>
+          <a href="https://fleet.drivewell.app" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}>
             See the Dashboard →
           </a>
         </div>
@@ -99,9 +99,9 @@ const ForFleets = () => (
       <div className="container" style={{ textAlign: 'center' }}>
         <h2 style={{ marginBottom: '14px' }}>Ready to see your fleet's DOT health?</h2>
         <p className="text-muted" style={{ fontSize: '17px', marginBottom: '32px' }}>14-day free trial. No credit card. Setup takes 10 minutes.</p>
-        <Link to="/pricing" className="btn-primary" style={{ fontSize: '17px', padding: '16px 36px' }}>
-          Start Free Trial <ArrowRight size={16} />
-        </Link>
+        <a href="https://fleet.drivewell.app" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '17px', padding: '16px 36px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          Launch Fleet Dashboard <ArrowRight size={16} />
+        </a>
       </div>
     </section>
   </main>

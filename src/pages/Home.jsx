@@ -170,7 +170,7 @@ const Home = () => (
               AI-powered driver health readiness platform. Identify risk 90 days before your next physical — not after a driver fails.
             </p>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '40px' }}>
-              <Link to="/contact" className="btn-white" style={{ fontWeight: '700' }}>Request Demo</Link>
+              <a href="https://fleet.drivewell.app" target="_blank" rel="noopener noreferrer" className="btn-white" style={{ fontWeight: '700' }}>Request Demo</a>
               <Link to="/pilot" style={{
                 padding: '12px 24px', borderRadius: '8px', fontWeight: '600', fontSize: '15px',
                 background: 'rgba(255,255,255,0.15)', color: 'white',
@@ -597,9 +597,9 @@ const Home = () => (
           Join fleets that catch driver health risk 90 days before it becomes an operational problem.
         </p>
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '28px' }}>
-          <Link to="/contact" className="btn-white" style={{ fontWeight: '700', fontSize: '16px', padding: '15px 32px' }}>
+          <a href="https://fleet.drivewell.app" target="_blank" rel="noopener noreferrer" className="btn-white" style={{ fontWeight: '700', fontSize: '16px', padding: '15px 32px' }}>
             Request Fleet Demo
-          </Link>
+          </a>
           <Link to="/pilot" style={{ padding: '15px 32px', borderRadius: '8px', fontWeight: '600', fontSize: '16px', background: 'transparent', color: 'white', border: '2px solid rgba(255,255,255,0.4)', textDecoration: 'none' }}>
             Start Pilot Program
           </Link>
